@@ -1,17 +1,21 @@
 {
   "name": "gitstamp-action",
   "version": "1.0.0",
-  "description": "[![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)",
+  "description": "Timestamp your Git commits using the Arweave permaweb.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Arto Bendiken <arto@bendiken.net>",
+  "keywords": ["gitstamp", "arweave", "permaweb"],
+  "author": "Arto Bendiken <arto@bendiken.net> (https://ar.to)",
   "license": "Unlicense",
+  "homepage": "https://github.com/artob/gitstamp-action",
+  "bugs": "https://github.com/artob/gitstamp-action/issues",
+  "repository": "https://github.com/artob/gitstamp-action.git",
   "dependencies": {
     "@actions/core": "^1.2.5",
     "@actions/github": "^4.0.0",
     "arweave": "^1.9.1"
-  }
+  },
+  "devDependencies": {}
 }

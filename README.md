@@ -24,7 +24,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
       - name: Submit Arweave transaction
-        uses: artob/gitstamp-action
+        uses: artob/gitstamp-action@v1
         with:
           wallet-key: ${{ secrets.ARWEAVE_KEYFILE }}
 ```
