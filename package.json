@@ -1,0 +1,12 @@
+{
+  "name": "gitstamp-action",
+  "version": "1.0.0",
+  "description": "[![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arto Bendiken <arto@bendiken.net>",
+  "license": "Unlicense"
+}
