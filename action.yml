@@ -9,10 +9,10 @@ outputs:
     description: The Arweave transaction ID.
   transaction-link:
     description: The Arweave transaction on ViewBlock.io.
-  response-status:
-    description: The Arweave REST API response status code.
-  response-status-text:
-    description: The Arweave REST API response status text.
+  response-code:
+    description: The Arweave HTTP API response status code.
+  response-text:
+    description: The Arweave HTTP API response status text.
 runs:
   using: node12
   main: index.js

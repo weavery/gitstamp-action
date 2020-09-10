@@ -28,8 +28,8 @@ async function run() {
 
     const response = await arweave.transactions.post(transaction);
     console.log("The Arweave response:", response);
-    core.setOutput("response-status", response.status);
-    core.setOutput("response-status-text", response.statusText);
+    core.setOutput("response-code", response.status);
+    core.setOutput("response-text", response.statusText);
   }
   catch (error) {
     core.setFailed(error);
