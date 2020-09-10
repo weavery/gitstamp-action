@@ -1,0 +1,18 @@
+name: Gitstamp
+description: Timestamp your Git commits using the Arweave permaweb.
+inputs:
+  wallet-key:
+    description: The Arweave wallet key to use for signing transactions.
+    required: true
+outputs:
+  transaction-id:
+    description: The Arweave transaction ID.
+  transaction-link:
+    description: The Arweave transaction on ViewBlock.io.
+  response-status:
+    description: The Arweave REST API response status code.
+  response-status-text:
+    description: The Arweave REST API response status text.
+runs:
+  using: node12
+  main: index.js
