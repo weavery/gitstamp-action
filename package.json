@@ -1,12 +1,16 @@
 {
   "name": "gitstamp-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Timestamp your Git commits using the Arweave permaweb.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["gitstamp", "arweave", "permaweb"],
+  "keywords": [
+    "gitstamp",
+    "arweave",
+    "permaweb"
+  ],
   "author": "Arto Bendiken <arto@bendiken.net> (https://ar.to)",
   "license": "Unlicense",
   "homepage": "https://github.com/artob/gitstamp-action",
