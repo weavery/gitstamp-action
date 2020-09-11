@@ -1,4 +1,5 @@
-name: Gitstamp
+name: Gitstamp for GitHub Actions
+author: Arto Bendiken
 description: Timestamp your Git commits using the Arweave permaweb.
 inputs:
   wallet-key:
@@ -16,3 +17,6 @@ outputs:
 runs:
   using: node12
   main: index.js
+branding:
+  icon: clock
+  color: gray-dark
