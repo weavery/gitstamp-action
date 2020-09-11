@@ -23,9 +23,9 @@ The Git commit metadata is recorded on the blockweave as follows:
 Once you are set up with an [Arweave wallet], using this action in your
 GitHub project is straightforward:
 
-### `.github/workflows/gitstamp.yml`
+### `.github/workflows/gitstamp.yaml`
 
-Paste the following into a `.github/workflows/gitstamp.yml` file in your
+Paste the following into a `.github/workflows/gitstamp.yaml` file in your
 GitHub repository:
 
 ```yaml
