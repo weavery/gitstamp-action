@@ -8,15 +8,20 @@ This is a [GitHub Action] for timestamping your Git commits using the
 
 By adding this action to your GitHub repository, the SHA-1 commit hash and
 commit metadata of your latest commit will get permanently and uncensorably
-timestamped on Arweave every time you push to the repository. This makes it
-easy to prove to any third party that a particular commit was created no
-later than the time when it was timestamped on Arweave.
+timestamped on Arweave every time you push to the repository.
+
+This makes it easy to prove to any third party that a particular commit was
+created no later than the time when it was timestamped on Arweave.
 
 ## Sample
 
 The Git commit metadata is recorded on the blockweave as follows:
 
 <img alt="Screenshot of Gitstamp metadata" src="https://raw.githubusercontent.com/artob/gitstamp-action/master/sample.png" width="480"/>
+
+See the [Gitstamp specification] for more particulars.
+
+[Gitstamp specification]: https://github.com/artob/gitstamp.dev#specification
 
 ## Usage
 
@@ -57,6 +62,8 @@ secret. The secret can be named anything you like, but we suggest
 Each Arweave transaction requires an enclosed transaction fee to pay for
 transaction processing and permanent storage on the Arweave network.
 In practice, this works out to less than USD$0.00001 per timestamped commit.
+(In other words, a USD$1 wallet will suffice for at least 100,000 commits.)
+
 This fee is deducted from the wallet configured in the repository secrets.
 
 ## Dependencies
