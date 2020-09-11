@@ -75,13 +75,13 @@ transaction fees.
 
 The Arweave transaction ID.
 
-For example, `yn2mJmto4Fv6n7OzmkuroH_O9K2XLWk9sv04ObKWbzk`.
+For example, `guSFLDoc3dvdeZg-fBCp6uLeLHb_gGLCW__eefqtHM0`.
 
 ### `transaction-link`
 
 The Arweave transaction explorer link on [ViewBlock.io](https://viewblock.io).
 
-For example, <https://viewblock.io/arweave/tx/yn2mJmto4Fv6n7OzmkuroH_O9K2XLWk9sv04ObKWbzk>.
+For example, <https://viewblock.io/arweave/tx/guSFLDoc3dvdeZg-fBCp6uLeLHb_gGLCW__eefqtHM0>.
 
 ### `response-code`
 
