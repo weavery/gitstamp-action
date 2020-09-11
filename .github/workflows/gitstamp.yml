@@ -1,6 +1,9 @@
 ---
 name: Gitstamp
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   gitstamp:
     runs-on: ubuntu-latest
