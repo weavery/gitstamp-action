@@ -16,6 +16,7 @@ async function run() {
 
     const transaction = await arweave.createTransaction({data: commit.message}, walletKey);
     transaction.addTag("Content-Type", "text/plain");
+    transaction.addTag("App-Name", "Gitstamp");
     transaction.addTag("Git-Commit", commit.id);
     transaction.addTag("Git-Author", "https://github.com/" + commit.author.username);
     transaction.addTag("Git-Committer", "https://github.com/" + commit.committer.username);
