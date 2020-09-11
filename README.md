@@ -12,11 +12,11 @@ timestamped on Arweave every time you push to the repository. This makes it
 easy to prove to any third party that a particular commit was created no
 later than the time when it was timestamped on Arweave.
 
-## Example
+## Sample
 
 The Git commit metadata is recorded on the blockweave as follows:
 
-<img alt="Screenshot of Gitstamp metadata" src="https://raw.githubusercontent.com/artob/gitstamp-action/master/example.png"/>
+<img alt="Screenshot of Gitstamp metadata" src="https://raw.githubusercontent.com/artob/gitstamp-action/master/sample.png" width="480"/>
 
 ## Usage
 
