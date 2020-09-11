@@ -8,6 +8,8 @@ const Arweave = require('arweave');
 async function run() {
   try {
     const walletKey = JSON.parse(core.getInput('wallet-key'));
+    const commitLink = core.getInput('commit-link');
+    console.log("Include a commit link:", commitLink); // TODO: remove
 
     const commit = github.context.payload.head_commit;
     console.log("The HEAD commit:", commit);
@@ -18,6 +20,9 @@ async function run() {
     transaction.addTag("Content-Type", "text/plain");
     transaction.addTag("App-Name", "Gitstamp");
     transaction.addTag("Git-Commit", commit.id);
+    if (commitLink) {
+      transaction.addTag("Git-Commit-Link", commit.url);
+    }
     transaction.addTag("Git-Author", "https://github.com/" + commit.author.username);
     transaction.addTag("Git-Committer", "https://github.com/" + commit.committer.username);
     transaction.addTag("Git-Committer-Date", commit.timestamp);

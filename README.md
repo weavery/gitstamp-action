@@ -43,6 +43,7 @@ jobs:
         uses: artob/gitstamp-action@v1
         with:
           wallet-key: ${{ secrets.ARWEAVE_KEYFILE }}
+          commit-link: true
 ```
 
 ### Repository secrets
@@ -68,6 +69,11 @@ This fee is deducted from the wallet configured in the repository secrets.
 
 The Arweave wallet key to use for signing transactions and paying
 transaction fees.
+
+## `commit-link`
+
+A boolean indicating whether to include a GitHub commit link.
+Defaults to `false` for privacy reasons.
 
 ## Outputs
 

@@ -5,11 +5,15 @@ inputs:
   wallet-key:
     description: The Arweave wallet key to use for signing transactions.
     required: true
+  commit-link:
+    description: A boolean indicating whether to include a GitHub commit link.
+    required: false
+    default: false
 outputs:
   transaction-id:
     description: The Arweave transaction ID.
   transaction-link:
-    description: The Arweave transaction on ViewBlock.io.
+    description: The Arweave transaction explorer link on ViewBlock.io.
   response-code:
     description: The Arweave HTTP API response status code.
   response-text:

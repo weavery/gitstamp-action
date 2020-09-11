@@ -15,3 +15,4 @@ jobs:
         uses: ./
         with:
           wallet-key: ${{ secrets.ARWEAVE_KEYFILE }}
+          commit-link: true
