@@ -35,14 +35,14 @@ on: [push]
 jobs:
   gitstamp:
     runs-on: ubuntu-latest
-    name: Timestamp commit on Gitstamp
+    name: Timestamp commit with Gitstamp
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
-      - name: Submit Arweave transaction
+      - name: Submit Gitstamp transaction
         uses: artob/gitstamp-action@v1
         with:
-          wallet-key: ${{ secrets.ARWEAVE_KEYFILE }}
+          wallet-key: ${{ secrets.GITSTAMP_KEYFILE }}
           commit-link: true
 ```
 
@@ -50,7 +50,7 @@ jobs:
 
 Add the contents of an Arweave wallet key file to a GitHub repository
 secret. The secret can be named anything you like, but we suggest
-`ARWEAVE_KEYFILE` to match the workflow file above.
+`GITSTAMP_KEYFILE` to match the workflow file above.
 
 ## Costs
 
