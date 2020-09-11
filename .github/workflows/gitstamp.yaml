@@ -7,7 +7,7 @@ on:
 jobs:
   gitstamp:
     runs-on: ubuntu-latest
-    name: Record commit on Gitstamp
+    name: Timestamp commit on Gitstamp
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
