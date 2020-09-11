@@ -1,11 +1,27 @@
-# Gitstamp GitHub Action
+# Gitstamp for GitHub Actions
 
 [![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
+[![Gitstamp](https://github.com/artob/gitstamp-action/workflows/Gitstamp/badge.svg)](https://github.com/artob/gitstamp-action/actions?query=workflow%3AGitstamp)
 
 This is a [GitHub Action] for timestamping your Git commits using the
 [Arweave] permaweb.
 
+By adding this action to your GitHub repository, the SHA-1 commit hash and
+commit metadata of your latest commit will get permanently and uncensorably
+timestamped on Arweave every time you push to the repository. This makes it
+easy to prove to any third party that a particular commit was created no
+later than the time when it was timestamped on Arweave.
+
+## Example
+
+The Git commit metadata is recorded on the blockweave as follows:
+
+<img alt="Screenshot of Gitstamp metadata" src="https://raw.githubusercontent.com/artob/gitstamp-action/master/example.png"/>
+
 ## Usage
+
+Once you are set up with an [Arweave wallet], using this action in your
+GitHub project is straightforward:
 
 ### `.github/workflows/gitstamp.yml`
 
@@ -19,7 +35,7 @@ on: [push]
 jobs:
   gitstamp:
     runs-on: ubuntu-latest
-    name: Record commit on Gitstamp
+    name: Timestamp commit on Gitstamp
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
@@ -32,8 +48,15 @@ jobs:
 ### Repository secrets
 
 Add the contents of an Arweave wallet key file to a GitHub repository
-secret. It can be named anything you like, but we suggest `ARWEAVE_KEYFILE`
-to match the workflow file above.
+secret. The secret can be named anything you like, but we suggest
+`ARWEAVE_KEYFILE` to match the workflow file above.
+
+## Costs
+
+Each Arweave transaction requires an enclosed transaction fee to pay for
+transaction processing and permanent storage on the Arweave network.
+In practice, this works out to less than USD$0.00001 per timestamped commit.
+This fee is deducted from the wallet configured in the repository secrets.
 
 ## Dependencies
 
@@ -43,7 +66,8 @@ to match the workflow file above.
 
 ### `wallet-key`
 
-The Arweave wallet key to use for signing transactions.
+The Arweave wallet key to use for signing transactions and paying
+transaction fees.
 
 ## Outputs
 
@@ -51,13 +75,13 @@ The Arweave wallet key to use for signing transactions.
 
 The Arweave transaction ID.
 
-For example, `V0rmZV1hL-GMJSbCe3cJycPECE1_P8hNbyPVeJO7BJY`.
+For example, `yn2mJmto4Fv6n7OzmkuroH_O9K2XLWk9sv04ObKWbzk`.
 
 ### `transaction-link`
 
-The Arweave transaction on [ViewBlock.io](https://viewblock.io).
+The Arweave transaction explorer link on [ViewBlock.io](https://viewblock.io).
 
-For example, <https://viewblock.io/arweave/tx/V0rmZV1hL-GMJSbCe3cJycPECE1_P8hNbyPVeJO7BJY>.
+For example, <https://viewblock.io/arweave/tx/yn2mJmto4Fv6n7OzmkuroH_O9K2XLWk9sv04ObKWbzk>.
 
 ### `response-code`
 
@@ -67,5 +91,6 @@ The Arweave HTTP API response status code.
 
 The Arweave HTTP API response status text.
 
-[GitHub Action]: https://github.com/features/actions
-[Arweave]:       https://www.arweave.org
+[GitHub Action]:  https://github.com/features/actions
+[Arweave]:        https://www.arweave.org
+[Arweave wallet]: https://www.arweave.org/wallet
