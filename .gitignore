@@ -9,3 +9,6 @@
 
 # Pandoc outputs
 *.html
+
+# NPM packages
+node_modules/
