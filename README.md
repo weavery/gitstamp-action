@@ -103,7 +103,15 @@ The Arweave HTTP API response status code.
 ### `response-text`
 
 The Arweave HTTP API response status text.
+```
+
+## See Also
+
+This repository is mirrored on [GitHub], [GitLab], and [Bitbucket].
 
 [GitHub Action]:  https://github.com/features/actions
 [Arweave]:        https://www.arweave.org
 [Arweave wallet]: https://www.arweave.org/wallet
+[GitHub]:         https://github.com/artob/gitstamp-action
+[GitLab]:         https://gitlab.com/artob/gitstamp-action
+[Bitbucket]:      https://bitbucket.org/artob/gitstamp-action
