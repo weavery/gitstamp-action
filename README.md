@@ -103,7 +103,6 @@ The Arweave HTTP API response status code.
 ### `response-text`
 
 The Arweave HTTP API response status text.
-```
 
 ## See Also
 
