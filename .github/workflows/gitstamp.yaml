@@ -1,4 +1,4 @@
-# See: https://github.com/artob/gitstamp-action
+# See: https://github.com/weavery/gitstamp-action
 ---
 name: Gitstamp
 on:

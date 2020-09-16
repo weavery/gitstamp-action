@@ -1,7 +1,7 @@
 # Gitstamp for GitHub Actions
 
 [![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
-[![Gitstamp](https://github.com/artob/gitstamp-action/workflows/Gitstamp/badge.svg)](https://github.com/artob/gitstamp-action/actions?query=workflow%3AGitstamp)
+[![Gitstamp](https://github.com/weavery/gitstamp-action/workflows/Gitstamp/badge.svg)](https://github.com/weavery/gitstamp-action/actions?query=workflow%3AGitstamp)
 
 This is a [GitHub Action] for timestamping your Git commits using the
 [Arweave] permaweb.
@@ -17,11 +17,11 @@ created no later than the time when it was timestamped on Arweave.
 
 The Git commit metadata is recorded on the blockweave as follows:
 
-<img alt="Screenshot of Gitstamp metadata" src="https://raw.githubusercontent.com/artob/gitstamp-action/master/sample.png" width="480"/>
+<img alt="Screenshot of Gitstamp metadata" src="https://raw.githubusercontent.com/weavery/gitstamp-action/master/sample.png" width="480"/>
 
 See the [Gitstamp specification] for more particulars.
 
-[Gitstamp specification]: https://github.com/artob/gitstamp.dev#specification
+[Gitstamp specification]: https://github.com/weavery/gitstamp.dev#specification
 
 ## Usage
 
@@ -45,7 +45,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
       - name: Submit Gitstamp transaction
-        uses: artob/gitstamp-action@v1
+        uses: weavery/gitstamp-action@v1
         with:
           wallet-key: ${{ secrets.GITSTAMP_KEYFILE }}
           commit-link: true
@@ -111,6 +111,6 @@ This repository is mirrored on [GitHub], [GitLab], and [Bitbucket].
 [GitHub Action]:  https://github.com/features/actions
 [Arweave]:        https://www.arweave.org
 [Arweave wallet]: https://www.arweave.org/wallet
-[GitHub]:         https://github.com/artob/gitstamp-action
-[GitLab]:         https://gitlab.com/artob/gitstamp-action
-[Bitbucket]:      https://bitbucket.org/artob/gitstamp-action
+[GitHub]:         https://github.com/weavery/gitstamp-action
+[GitLab]:         https://gitlab.com/weavery/gitstamp-action
+[Bitbucket]:      https://bitbucket.org/weavery/gitstamp-action

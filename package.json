@@ -13,9 +13,9 @@
   ],
   "author": "Arto Bendiken <arto@bendiken.net> (https://ar.to)",
   "license": "Unlicense",
-  "homepage": "https://github.com/artob/gitstamp-action",
-  "bugs": "https://github.com/artob/gitstamp-action/issues",
-  "repository": "https://github.com/artob/gitstamp-action.git",
+  "homepage": "https://github.com/weavery/gitstamp-action",
+  "bugs": "https://github.com/weavery/gitstamp-action/issues",
+  "repository": "https://github.com/weavery/gitstamp-action.git",
   "dependencies": {
     "@actions/core": "^1.2.5",
     "@actions/github": "^4.0.0",
