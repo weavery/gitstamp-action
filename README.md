@@ -2,6 +2,7 @@
 
 [![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
 [![Gitstamp](https://github.com/weavery/gitstamp-action/workflows/Gitstamp/badge.svg)](https://github.com/weavery/gitstamp-action/actions?query=workflow%3AGitstamp)
+[![Discord](https://img.shields.io/discord/755852964513579099?label=discord)](https://discord.gg/6meRQ27)
 
 This is a [GitHub Action] for timestamping your Git commits using the
 [Arweave] permaweb.
