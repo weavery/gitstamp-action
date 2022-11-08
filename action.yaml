@@ -19,7 +19,7 @@ outputs:
   response-text:
     description: The Arweave HTTP API response status text.
 runs:
-  using: node12
+  using: node16
   main: index.js
 branding:
   icon: clock
