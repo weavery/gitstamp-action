@@ -19,7 +19,7 @@
   "dependencies": {
     "@actions/core": "^1.2.5",
     "@actions/github": "^4.0.0",
-    "arweave": "^1.9.1"
+    "arweave": "^1.13.7"
   },
   "devDependencies": {}
 }
